@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+:root {
+    --cor-primaria: hsl(257, 40%, 49%);
+    --cor-secudandria: #FFFFFF;
+    --cor-hover: hsl(300, 69%, 71%);
+
+    --font-principal: 'Open Sans', sans-serif;
+}
+
+body {
+    background: var(--cor-primaria) url("img/bg-desktop.svg") no-repeat;
+    background-size: cover;
+    color: var(--cor-secudandria);
+    font-family: var(--font-principal);
+    font-size: 16px;
+    font-weight: 400;
+    padding: 0 5% 0 5%;
+
+    height: 100vh;
+}
+
+.cabecalho {
+    margin: 20px 0;
+}
+
+.cabecalho__logo {
+    width: 15%;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    gap: 2.5em;
+}
+
+.container__imagem {
+    width: 65%;
+}
+
+.container__conteudo {
+    padding-top: 2.5em;
+}
+
+.container__titulo {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 1.3em;
+}
+
+.container__texto {
+    line-height: 1.5em;
+    margin: 1.5em 0;
+}
+
+.container__botao {
+    background-color: var(--cor-secudandria);
+    color: var(--cor-primaria);
+    border: none;
+    padding: 10px 40px;
+    border-radius: 25px;
+    box-shadow: 3px 4px 7px 0px rgba(0, 0, 0, 0.438);
+    font-weight: 400;
+    cursor: pointer;
+
+    transition: .5s;
+}
+
+.container__botao:hover {
+    background-color: var(--cor-hover);
+    color: var(--cor-secudandria);
+    padding: 12px 60px;
+    font-size: 1.1em;
+}
+
+.rodape {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1em;
+    padding: 20px 0;
+}
+
+.rodape__link {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    color: var(--cor-secudandria);
+    border: 1px solid var(--cor-secudandria);
+    border-radius: 50px;
+    padding: 10px;
+    text-decoration: none;
+
+    width: 15px;
+    transition: .5s;
+}
+
+.rodape__link:hover {
+    border-color: var(--cor-hover);
+    color: var(--cor-hover);
+    translate: 0 3px;
+}
